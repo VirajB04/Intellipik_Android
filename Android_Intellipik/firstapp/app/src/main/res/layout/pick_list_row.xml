@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,4"
+    android:id="@+id/row_table_pick_list">
+    <TableRow>
+
+        <TextView
+            android:layout_width="6sp"
+            android:id="@+id/id_pick_list"
+            android:layout_column="1"
+            android:background="@drawable/table"
+            android:fontFamily="@font/righteous"
+            android:foregroundGravity="clip_horizontal"
+            android:padding="6dp"
+            android:textColor="@color/greenish_blue"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/code_pick_list"
+            android:textSize="18dp"
+            android:layout_width="40sp"
+            android:fontFamily="@font/righteous"
+            android:background="@drawable/table"
+            android:padding="6dp"
+            android:textColor="@color/greenish_blue"
+            android:foregroundGravity="center_horizontal" />
+        <TextView
+            android:id="@+id/name_pick_list"
+            android:textSize="18dp"
+            android:layout_width="80sp"
+            android:fontFamily="@font/righteous"
+            android:background="@drawable/table"
+            android:padding="6dp"
+            android:textColor="@color/greenish_blue"
+            android:foregroundGravity="center_horizontal" />
+        <TextView
+            android:id="@+id/number_items_pick_list"
+            android:textSize="18dp"
+            android:layout_width="80sp"
+            android:fontFamily="@font/righteous"
+            android:background="@drawable/table"
+            android:padding="6dp"
+            android:textColor="@color/greenish_blue"
+            android:foregroundGravity="center_horizontal" />
+    </TableRow>
+
+</TableLayout>

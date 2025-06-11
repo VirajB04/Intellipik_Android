@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBF5FF"
+    android:orientation="vertical"
+    tools:context=".pick_list_Activity">
+    <TextView
+        android:id="@+id/pick_list_title"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="13dp"
+        android:background="@color/bluish_logo"
+        android:fontFamily="@font/righteous"
+        android:text="@string/pick_list"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back_button_picklist"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="10dp"
+        android:backgroundTint="@color/bluish_logo"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1,2,3,4"
+        android:background="@drawable/table"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+        <TableRow>
+
+            <TextView
+                android:layout_width="6sp"
+                android:id="@+id/id"
+                android:layout_column="1"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:foregroundGravity="center_horizontal"
+                android:padding="6dp"
+                android:text="ID"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="CODE"
+                android:id="@+id/code"
+                android:textSize="18dp"
+                android:layout_width="40sp"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/table"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:textColor="@color/black"
+                android:foregroundGravity="center_horizontal"
+                android:layout_column="1"/>
+            <TextView
+                android:text="NAME"
+                android:id="@+id/name"
+                android:textSize="18dp"
+                android:layout_width="80sp"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/table"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:textColor="@color/black"
+                android:foregroundGravity="center_horizontal"
+                android:layout_column="1"/>
+            <TextView
+                android:text="NO.OF ITEMS"
+                android:id="@+id/number_items"
+                android:textSize="18dp"
+                android:layout_width="80sp"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/table"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:textColor="@color/black"
+                android:foregroundGravity="center_horizontal" />
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_pick_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QR_button"
+        android:text="QR SCANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/bluish_logo"
+        android:tint="#fff"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_open_dialog"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_24"
+        android:backgroundTint="@color/bluish_logo"
+        android:tint="#fff"
+        android:layout_margin="44dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pick_status"
+    android:background="#DBF5FF">
+    <TextView
+        android:id="@+id/real_time_title"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="13dp"
+        android:background="@color/bluish_logo"
+        android:fontFamily="@font/righteous"
+        android:text="Real time pick status"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back_button_pick_status"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="10dp"
+        android:backgroundTint="@color/bluish_logo"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="150dp">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,1,1,1,1,1"
+        android:background="@drawable/table"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/Code"
+                android:layout_width="90sp"
+                android:layout_column="1"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="CODE"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="120sp"
+                android:layout_column="1"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="DATE"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="120sp"
+                android:layout_column="1"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="NAME"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number_kits"
+                android:layout_width="108sp"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:foregroundGravity="center_horizontal"
+                android:padding="5dp"
+                android:text="NO.OF KITS"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number_kits_picked"
+                android:layout_width="174sp"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:foregroundGravity="center_horizontal"
+                android:padding="5dp"
+                android:text="NO.OF KITS PICKED"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pick_status"
+                android:layout_width="100sp"
+                android:background="@drawable/table"
+                android:fontFamily="@font/righteous"
+                android:foregroundGravity="center_horizontal"
+                android:padding="5dp"
+                android:text="STATUS"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_pick_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+    </HorizontalScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QR_button"
+        android:text="QR SCANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/bluish_logo"
+        android:tint="#fff"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_open_dialog"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_24"
+        android:backgroundTint="@color/bluish_logo"
+        android:tint="#fff"
+        android:layout_margin="44dp"/>
+</RelativeLayout>

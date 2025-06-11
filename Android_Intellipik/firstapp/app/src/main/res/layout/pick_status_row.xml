@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,1,1,1,1,1"
+        android:id="@+id/row_table_pick_status">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/code_pick_status"
+                android:layout_width="90sp"
+                android:layout_column="1"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:background="@drawable/table"
+                android:textColor="@color/greenish_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/date_pick_status"
+                android:layout_width="120sp"
+                android:layout_column="1"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:background="@drawable/table"
+                android:textColor="@color/greenish_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/name_pick_status"
+                android:layout_width="120sp"
+                android:layout_column="1"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:background="@drawable/table"
+                android:textColor="@color/greenish_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number_kits_pick_status"
+                android:layout_width="108sp"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:background="@drawable/table"
+                android:textColor="@color/greenish_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number_kits_picked_pick_status"
+                android:layout_width="174sp"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:textColor="@color/greenish_blue"
+                android:background="@drawable/table"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pick_status"
+                android:layout_width="100sp"
+                android:fontFamily="@font/righteous"
+                android:gravity="start"
+                android:padding="5dp"
+                android:background="@drawable/table"
+                android:textColor="@color/greenish_blue"
+                android:textSize="18sp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/welcome_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/righteous"
+            android:text="Add New PickList Item"
+            android:textAlignment="center"
+            android:textColor="@color/pop_box_text"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/picklist_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/pop_box"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/righteous"
+            android:hint="PickList Code"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/picklist_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pop_box"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/righteous"
+            android:hint="Picklist Name"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/picklist_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pop_box"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/righteous"
+            android:hint="No. of Items"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/pop_box_text"
+            android:fontFamily="@font/righteous"
+            android:text="Add"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

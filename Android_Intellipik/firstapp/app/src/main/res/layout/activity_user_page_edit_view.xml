@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_page_edit_view"
+    android:orientation="vertical"
+    android:background="#DBF5FF">
+    <TextView
+        android:id="@+id/user_page_editview"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="13dp"
+        android:background="@color/bluish_logo"
+        android:fontFamily="@font/righteous"
+        android:text=" USERS"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back_button_user_page_editview"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="10dp"
+        android:backgroundTint="@color/bluish_logo"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="150dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,1,1,1,1"
+            android:background="@drawable/table"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/users_username"
+                    android:layout_width="108sp"
+                    android:layout_column="1"
+                    android:background="@drawable/table"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="User-Name"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Users_email"
+                    android:layout_width="150sp"
+                    android:layout_column="1"
+                    android:background="@drawable/table"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Users_FirstName"
+                    android:layout_width="130sp"
+                    android:layout_column="1"
+                    android:background="@drawable/table"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="First-Name"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Users_LastName"
+                    android:layout_width="130sp"
+                    android:layout_column="1"
+                    android:background="@drawable/table"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Last-Name"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Users_UserRole"
+                    android:layout_width="120sp"
+                    android:layout_column="1"
+                    android:background="@drawable/table"
+                    android:fontFamily="@font/righteous"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="User-Role"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

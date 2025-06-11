@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBF5FF"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignupActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_box"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:id="@+id/welcome_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:text="Welcome!"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#289DCC"
+                android:textSize="34sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/new_reg_username"
+                android:background="@drawable/detail_box"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:importantForAutofill="no"
+                android:padding="15dp"
+                android:drawablePadding="8dp"
+                android:hint="New Username"
+                android:fontFamily="@font/righteous"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="55dp"
+                tools:ignore="HardcodedText,RtlHardcoded,TextFields" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/new_reg_email_id"
+                android:background="@drawable/detail_box"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:importantForAutofill="no"
+                android:padding="15dp"
+                android:drawablePadding="8dp"
+                android:hint="Email-ID"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/righteous"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="15dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/new_reg_password"
+                android:background="@drawable/detail_box"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:importantForAutofill="no"
+                android:padding="15dp"
+                android:drawablePadding="8dp"
+                android:hint="New Password"
+                android:inputType="numberPassword"
+                android:fontFamily="@font/righteous"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="15dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/Confirm_reg_password"
+                android:background="@drawable/detail_box"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:importantForAutofill="no"
+                android:padding="15dp"
+                android:drawablePadding="8dp"
+                android:hint="Confirm Password"
+                android:inputType="numberPassword"
+                android:fontFamily="@font/righteous"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="15dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/create_acc_button"
+                android:backgroundTint="@color/bluish_logo"
+                android:text="@string/create_an_account"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/righteous"
+                android:layout_marginTop="60dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/card_box"
+        android:padding="4dp"
+        android:paddingEnd="30dp"
+        android:text="@string/sign_in_with_google"
+        android:textColor="@color/bluish_logo"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_below="@id/card_box"
+        android:padding="4dp"
+        android:paddingEnd="30dp"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@color/bluish_logo" />
+
+
+</RelativeLayout>
