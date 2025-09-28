@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<StretchedLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -151,4 +151,4 @@
         android:backgroundTint="@color/bluish_logo"
         android:tint="#fff"
         android:layout_margin="44dp"/>
-</RelativeLayout>
+</StretchedLayout>
